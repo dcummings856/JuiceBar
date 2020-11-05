@@ -6,15 +6,15 @@ const createMenuContent = () => {
   menuTitle.innerHTML = 'Best Juice Ever';
   menuInfo.innerHTML = 'Wow! look at how delicious this juice is!';
 
-menuContent.appendChild(menuTitle);
-menuContent.appendChild(menuInfo);
+  menuContent.appendChild(menuTitle);
+  menuContent.appendChild(menuInfo);
 
-//css
-menuContent.style.cssText = 'position: relative;';
-menuTitle.style.cssText = 'position: absolute;';
-menuInfo.style.cssText = 'position: absolute; top: 45px;';
+  //css
+  menuContent.style.cssText = 'position: relative;';
+  menuTitle.style.cssText = 'position: absolute;';
+  menuInfo.style.cssText = 'position: absolute; top: 45px;';
 
-return menuContent;
+  return menuContent;
 };
 
 export { createMenuContent };
