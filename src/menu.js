@@ -9,6 +9,11 @@ const createMenuContent = () => {
 menuContent.appendChild(menuTitle);
 menuContent.appendChild(menuInfo);
 
+//css
+menuContent.style.cssText = 'position: relative;';
+menuTitle.style.cssText = 'position: absolute;';
+menuInfo.style.cssText = 'position: absolute; top: 45px;';
+
 return menuContent;
 };
 

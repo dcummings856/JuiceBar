@@ -1,7 +1,18 @@
-import { createTitle, createSlogan, createNavBar, createImageDiv, addImage } from './title-slogan-nav';
-import { menuContent } from './menu';
+import { createPageHeader, createNavBar } from './title-slogan-nav';
+import { createMenuContent } from './menu';
 
-const displayPage = (() => {
-  const navBar = createNavBar();
-  const menuCon = menuContent();
-})();
+const showMenu = () => {
+  document.querySelector('#menu').addEventListener('click', () => {
+    document.querySelector('#content > .image-div').appendChild(createMenuContent());  
+  })
+};
+
+const homePage = () => {
+  document.querySelector('#home').addEventListener('click', () => {
+    location.reload();
+  })
+};
+
+homePage();
+
+showMenu();
