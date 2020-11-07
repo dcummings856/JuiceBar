@@ -1,20 +1,22 @@
 const createContactContent = () => {
-  const contactContent = document.createElement('div');
+  const contactContentDiv = document.createElement('div');
   const contactTitle = document.createElement('h2');
   const contactInfo = document.createElement('p');
+
+  contactContentDiv.id = 'contact-tab';
 
   contactTitle.innerHTML = 'Contact Us';
   contactInfo.innerHTML = 'Look for the juice!'
 
-  contactContent.appendChild(contactTitle);
-  contactContent.appendChild(contactInfo);
+  contactContentDiv.appendChild(contactTitle);
+  contactContentDiv.appendChild(contactInfo);
 
   //css
-  contactContent.style.cssText = 'position: relative;';
+  contactContentDiv.style.cssText = 'position: relative;';
   contactTitle.style.cssText = 'position: absolute;';
   contactInfo.style.cssText = 'position: absolute; top: 45px;';
 
-  return contactContent;
+  return contactContentDiv;
 };
 
 export { createContactContent };
